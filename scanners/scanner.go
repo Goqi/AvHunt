@@ -20,5 +20,6 @@ var (
 		&JinshanDetection{},
 		&SafedogDetection{},
 		&YunsuoDetection{},
+		&TencentguanjiaDetection{},
 	}
 )

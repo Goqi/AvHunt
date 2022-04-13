@@ -331,6 +331,23 @@ var EdrList = []string{
 	"wsssr_defence_service",
 	"YSBugReport",
 	"YSUpdate",
+	"QMDL",
+	"QMDLP",
+	"QMExtraPackageSetup",
+	"QMInterfaceExe",
+	"QMLaunch",
+	"QMLoginAssistant",
+	"QMLspPing",
+	"QMNetProxyClient",
+	"QMNetProxyHost",
+	"QMPersonalCenter",
+	"QMProviderUpdate",
+	"QMSignScan",
+	"QMSmbAssistor",
+	"QMStateCheck",
+	"QMSuperScan",
+	"QMUpload",
+	"QMUsbGuard",
 }
 
 var ReconList = []string{
