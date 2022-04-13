@@ -26,4 +26,5 @@ var (
 	SafedogEDR        EDRType = "safedog"
 	YunsuoEDR         EDRType = "yunsuo"
 	TencentguanjiaEDR EDRType = "guanjia"
+	TopsecedrEDR      EDRType = "topsecedr"
 )

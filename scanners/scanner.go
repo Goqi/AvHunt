@@ -21,5 +21,6 @@ var (
 		&SafedogDetection{},
 		&YunsuoDetection{},
 		&TencentguanjiaDetection{},
+		&TopsecedrDetection{},
 	}
 )

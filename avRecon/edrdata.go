@@ -348,6 +348,14 @@ var EdrList = []string{
 	"QMSuperScan",
 	"QMUpload",
 	"QMUsbGuard",
+	"Topsec",
+	"TopsecMain",
+	"TopsecTray",
+	"TopsecDaemon",
+	"TopsecConfig",
+	"TopsecLog",
+	"TopsecUpdate",
+	"TopsecWSCtrl",
 }
 
 var ReconList = []string{

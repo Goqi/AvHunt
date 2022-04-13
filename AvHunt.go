@@ -17,21 +17,12 @@ var (
 	services     bool
 	registry     bool
 	all          bool
-	versionStr   string = "1.3.1"
+	versionStr   string = "0.9"
 	versionCheck bool
 )
 
 func printBanner() {
-	fmt.Printf(`
-    __________  ____     __  ____  ___   ________
-   / ____/ __ \/ __ \   / / / / / / / | / /_  __/
-  / __/ / / / / /_/ /  / /_/ / / / /  |/ / / /   
- / /___/ /_/ / _, _/  / __  / /_/ / /|  / / /    
-/_____/_____/_/ |_|  /_/ /_/\____/_/ |_/ /_/     																				
-
-FourCore Labs (https://fourcore.io) | Version: %v
-
-`, versionStr)
+	fmt.Println("Goqi Team (https://github.com/Goqi/AvHunt) | Version:", versionStr)
 }
 
 func edrCommand(cmd *cobra.Command, args []string) {
@@ -80,13 +71,13 @@ func versionCommand(cmd *cobra.Command, args []string) {
 }
 
 func scanEDRCommand(cmd *cobra.Command, args []string) {
-	fmt.Println("[EDR]")
+	fmt.Println("[AV]")
 	systemData, _ := avRecon.GetSystemData(context.Background())
 
 	for _, scanner := range scanners.Scanners {
 		_, ok := scanner.Detect(systemData)
 		if ok {
-			fmt.Printf("Detected EDR: %s\n", scanner.Name())
+			fmt.Printf("Detected AV: %s\n", scanner.Name())
 		}
 	}
 }
@@ -192,7 +183,6 @@ func init() {
 }
 
 func main() {
-	fmt.Print("\033[H\033[2J")
 	printBanner()
 	Execute()
 }

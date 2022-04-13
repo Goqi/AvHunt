@@ -49,6 +49,7 @@ AvHunt Detections Currently Available
 - 安全狗
 - 云锁椒图
 - 腾讯电脑管家
+- 天融信EDR
 
 ## EDRHunt
 
