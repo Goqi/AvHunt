@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Goqi/AvHunt/pkg/resources"
+	"github.com/Goqi/AvHunt/resources"
 	"github.com/bi-zone/go-fileversion"
 )
 

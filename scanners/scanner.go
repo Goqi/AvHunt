@@ -1,6 +1,6 @@
 package scanners
 
-import "github.com/Goqi/AvHunt/pkg/resources"
+import "github.com/Goqi/AvHunt/resources"
 
 var (
 	Scanners = []resources.EDRDetection{

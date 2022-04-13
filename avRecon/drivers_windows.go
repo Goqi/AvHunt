@@ -8,8 +8,7 @@ import (
 	"unicode/utf16"
 	"unsafe"
 
-	"github.com/Goqi/AvHunt/pkg/resources"
-
+	"github.com/Goqi/AvHunt/resources"
 	"github.com/hashicorp/go-multierror"
 )
 

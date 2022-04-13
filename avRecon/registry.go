@@ -8,7 +8,7 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/Goqi/AvHunt/pkg/resources"
+	"github.com/Goqi/AvHunt/resources"
 )
 
 var (

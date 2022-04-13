@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/Goqi/AvHunt/pkg/resources"
+	"github.com/Goqi/AvHunt/resources"
 )
 
 // GetSystemData collects the parsed list of processes, services, drivers and registry keys to be used for EDR heuristics.

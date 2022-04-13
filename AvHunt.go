@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Goqi/AvHunt/pkg/edrRecon"
-	"github.com/Goqi/AvHunt/pkg/resources"
-	"github.com/Goqi/AvHunt/pkg/scanners"
+	"github.com/Goqi/AvHunt/avRecon"
+	"github.com/Goqi/AvHunt/resources"
+	"github.com/Goqi/AvHunt/scanners"
 	"github.com/spf13/cobra"
 )
 
@@ -35,7 +35,7 @@ FourCore Labs (https://fourcore.io) | Version: %v
 }
 
 func edrCommand(cmd *cobra.Command, args []string) {
-	if edrRecon.CheckIfAdmin() {
+	if avRecon.CheckIfAdmin() {
 		fmt.Println("Running in adminsitrator mode.")
 	} else {
 		fmt.Println("Running in user mode, escalate to admin for more details.")
@@ -51,25 +51,25 @@ func edrCommand(cmd *cobra.Command, args []string) {
 
 	if processes {
 		fmt.Println("[PROCESSES]")
-		summary, _ := edrRecon.CheckProcesses()
+		summary, _ := avRecon.CheckProcesses()
 		printProcess(summary)
 		fmt.Println()
 	}
 	if drivers {
 		fmt.Println("[DRIVERS]")
-		summary, _ := edrRecon.CheckDrivers()
+		summary, _ := avRecon.CheckDrivers()
 		printDrivers(summary)
 		fmt.Println()
 	}
 	if services {
 		fmt.Println("[SERVICES]")
-		summary, _ := edrRecon.CheckServices()
+		summary, _ := avRecon.CheckServices()
 		printServices(summary)
 		fmt.Println()
 	}
 	if registry {
 		fmt.Println("[REGISTRY]")
-		summary, _ := edrRecon.CheckRegistry(context.Background())
+		summary, _ := avRecon.CheckRegistry(context.Background())
 		printRegistry(summary)
 		fmt.Println()
 	}
@@ -81,7 +81,7 @@ func versionCommand(cmd *cobra.Command, args []string) {
 
 func scanEDRCommand(cmd *cobra.Command, args []string) {
 	fmt.Println("[EDR]")
-	systemData, _ := edrRecon.GetSystemData(context.Background())
+	systemData, _ := avRecon.GetSystemData(context.Background())
 
 	for _, scanner := range scanners.Scanners {
 		_, ok := scanner.Detect(systemData)
@@ -107,7 +107,7 @@ var rootCmd = &cobra.Command{
 var versionCmd = &cobra.Command{
 	Use:   "version",
 	Short: "version",
-	Long:  `edrRecon version`,
+	Long:  `avRecon version`,
 	Run:   versionCommand,
 }
 
@@ -134,7 +134,7 @@ func printProcess(summary []resources.ProcessMetaData) {
 		fmt.Printf("ProcessID: %s\n", process.ProcessPID)
 		fmt.Printf("Parent Process: %s\n", process.ProcessParentPID)
 		fmt.Printf("Process CmdLine: %s\n", process.ProcessCmdLine)
-		fmt.Printf("File Metadata: \t%s\n", edrRecon.FileMetaDataParser(process.ProcessExeMetaData))
+		fmt.Printf("File Metadata: \t%s\n", avRecon.FileMetaDataParser(process.ProcessExeMetaData))
 		fmt.Printf("Matched Keyword: %s\n", process.ScanMatch)
 		fmt.Println()
 	}
@@ -148,7 +148,7 @@ func printServices(summary []resources.ServiceMetaData) {
 		fmt.Printf("CommandLine: %s\n", service.ServicePathName)
 		fmt.Printf("Status: %s\n", service.ServiceState)
 		fmt.Printf("ProcessID: %s\n", service.ServiceProcessId)
-		fmt.Printf("File Metadata: \t%s\n", edrRecon.FileMetaDataParser(service.ServiceExeMetaData))
+		fmt.Printf("File Metadata: \t%s\n", avRecon.FileMetaDataParser(service.ServiceExeMetaData))
 		fmt.Printf("Matched Keyword: %s\n", service.ScanMatch)
 		fmt.Println()
 	}
@@ -166,7 +166,7 @@ func printDrivers(summary []resources.DriverMetaData) {
 	for _, driver := range summary {
 		fmt.Printf("Suspicious Driver Module: %s\n", driver.DriverBaseName)
 		fmt.Printf("Driver FilePath: %s\n", driver.DriverFilePath)
-		fmt.Printf("Driver File Metadata: \t%s\n", edrRecon.FileMetaDataParser(driver.DriverSysMetaData))
+		fmt.Printf("Driver File Metadata: \t%s\n", avRecon.FileMetaDataParser(driver.DriverSysMetaData))
 		fmt.Printf("Matched Keyword: %s\n", driver.ScanMatch)
 		fmt.Println()
 	}

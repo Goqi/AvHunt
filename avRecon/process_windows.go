@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Goqi/AvHunt/pkg/resources"
+	"github.com/Goqi/AvHunt/resources"
 	"github.com/hashicorp/go-multierror"
 	"github.com/yusufpapurcu/wmi"
 )
