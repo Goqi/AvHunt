@@ -1,10 +1,10 @@
-package edrRecon
+package avRecon
 
 import (
 	"fmt"
 	"strings"
 
-	"github.com/Goqi/AvHunt/resources"
+	"AvHunt/resources"
 	"github.com/hashicorp/go-multierror"
 	"github.com/yusufpapurcu/wmi"
 )

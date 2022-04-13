@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Goqi/AvHunt/avRecon"
-	"github.com/Goqi/AvHunt/resources"
-	"github.com/Goqi/AvHunt/scanners"
+	"AvHunt/avRecon"
+	"AvHunt/resources"
+	"AvHunt/scanners"
 	"github.com/spf13/cobra"
 )
 

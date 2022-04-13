@@ -1,7 +1,7 @@
 package resources
 
 import (
-	"github.com/Goqi/AvHunt/util"
+	"AvHunt/util"
 )
 
 type SystemData struct {

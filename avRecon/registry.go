@@ -1,4 +1,4 @@
-package edrRecon
+package avRecon
 
 import (
 	"context"
@@ -8,7 +8,7 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/Goqi/AvHunt/resources"
+	"AvHunt/resources"
 )
 
 var (

@@ -1,10 +1,10 @@
-package edrRecon
+package avRecon
 
 import (
 	"context"
 	"fmt"
 
-	"github.com/Goqi/AvHunt/resources"
+	"AvHunt/resources"
 )
 
 // GetSystemData collects the parsed list of processes, services, drivers and registry keys to be used for EDR heuristics.

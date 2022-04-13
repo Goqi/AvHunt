@@ -1,4 +1,4 @@
-package edrRecon
+package avRecon
 
 import (
 	"errors"
@@ -8,7 +8,7 @@ import (
 	"unicode/utf16"
 	"unsafe"
 
-	"github.com/Goqi/AvHunt/resources"
+	"AvHunt/resources"
 	"github.com/hashicorp/go-multierror"
 )
 

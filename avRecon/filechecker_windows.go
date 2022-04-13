@@ -1,11 +1,11 @@
-package edrRecon
+package avRecon
 
 import (
 	"errors"
 	"fmt"
 	"strings"
 
-	"github.com/Goqi/AvHunt/resources"
+	"AvHunt/resources"
 	"github.com/bi-zone/go-fileversion"
 )
 
