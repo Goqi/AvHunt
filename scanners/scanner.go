@@ -17,5 +17,8 @@ var (
 		&HuorongDetection{},
 		&SLL360Detection{},
 		&TianQingDetection{},
+		&JinshanDetection{},
+		&SafedogDetection{},
+		&YunsuoDetection{},
 	}
 )

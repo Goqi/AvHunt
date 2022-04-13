@@ -22,4 +22,7 @@ var (
 	HuorongEDR      EDRType = "huorong"
 	SLL360EDR       EDRType = "360"
 	TianQingEDR     EDRType = "tianqing"
+	JinshanEDR      EDRType = "jinshan"
+	SafedogEDR      EDRType = "safedog"
+	YunsuoEDR       EDRType = "yunsuo"
 )

@@ -316,6 +316,21 @@ var EdrList = []string{
 	"HipsMain",
 	"usysdiag",
 	"huorong",
+	"kxescore",
+	"kupdata",
+	"kxetray",
+	"kwsprotect64",
+	"SafeDog",
+	"SafeDogGuardHelper",
+	"SafeDogServerUI",
+	"SafeDogTray",
+	"Safedog Update Center",
+	"SafeDogCloudHelper",
+	"SafeDogGuardCenter",
+	"wsssr_defence_daemon",
+	"wsssr_defence_service",
+	"YSBugReport",
+	"YSUpdate",
 }
 
 var ReconList = []string{

@@ -5,7 +5,7 @@ import "AvHunt/resources"
 type SLL360Detection struct{}
 
 func (w *SLL360Detection) Name() string {
-	return "360 Defender"
+	return "奇虎360 Defender"
 }
 
 func (w *SLL360Detection) Type() resources.EDRType {
