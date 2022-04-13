@@ -48,6 +48,7 @@ AvHunt Detections Currently Available
 - 金山毒霸
 - 安全狗
 - 云锁椒图
+- 腾讯电脑管家
 
 ## EDRHunt
 
