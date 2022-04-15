@@ -27,4 +27,7 @@ var (
 	YunsuoEDR         EDRType = "yunsuo"
 	TencentguanjiaEDR EDRType = "guanjia"
 	TopsecedrEDR      EDRType = "topsecedr"
+	RisingEDR         EDRType = "rising"
+	JiangminEDR       EDRType = "jiangmin"
+	AntianEDR         EDRType = "antian"
 )

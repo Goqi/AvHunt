@@ -22,5 +22,8 @@ var (
 		&YunsuoDetection{},
 		&TencentguanjiaDetection{},
 		&TopsecedrDetection{},
+		&RisingDetection{},
+		&JiangminDetection{},
+		&AntianDetection{},
 	}
 )

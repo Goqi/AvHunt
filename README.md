@@ -1,4 +1,4 @@
-# AvHunt-杀毒软件识别
+# AvHunt-杀毒软件识别与卸载
 [AvHunt](https://github.com/Goqi/AvHunt)是[EDRHunt](https://github.com/FourCoreLabs/EDRHunt)的修改版，添加多个杀毒软件的识别，更容易识别中国的杀毒软件！
 
 ## Usage
@@ -50,6 +50,9 @@ AvHunt Detections Currently Available
 - 云锁椒图
 - 腾讯电脑管家
 - 天融信EDR
+- 瑞星杀毒
+- 江民杀毒
+- 安天杀毒
 
 ## EDRHunt
 

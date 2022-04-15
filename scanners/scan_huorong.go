@@ -5,7 +5,7 @@ import "AvHunt/resources"
 type HuorongDetection struct{}
 
 func (w *HuorongDetection) Name() string {
-	return "Huorong Defender"
+	return "火绒 Defender"
 }
 
 func (w *HuorongDetection) Type() resources.EDRType {

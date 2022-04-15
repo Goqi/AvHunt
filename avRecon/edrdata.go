@@ -356,6 +356,21 @@ var EdrList = []string{
 	"TopsecLog",
 	"TopsecUpdate",
 	"TopsecWSCtrl",
+	"rsmain",
+	"rstray",
+	"rstray64",
+	"rsupdatertool",
+	"rslogup",
+	"KvPad",
+	"KVMonXP",
+	"KVHistory",
+	"KVInfoBarUI",
+	"KVPreScan",
+	"AtTray",
+	"AtDocSecurity",
+	"AtUsbScan",
+	"atmain",
+	"AtUpdate",
 }
 
 var ReconList = []string{
