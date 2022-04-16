@@ -13,15 +13,15 @@ func (w *SLL360Detection) Type() resources.EDRType {
 }
 
 var SLL360ProcessHeuristic = []string{
-	"360sd.exe",
-	"360tray.exe",
-	"ZhuDongFangYu.exe",
-	"360rp.exe",
-	"360safe.exe",
-	"360safebox.exe",
-	"QHActiveDefense.exe",
-	"360skylarsvc.exe",
-	"LiveUpdate360.exe",
+	"360sd",
+	"360tray",
+	"ZhuDongFangYu",
+	"360rp",
+	"360safe",
+	"360safebox",
+	"QHActiveDefense",
+	"360skylarsvc",
+	"LiveUpdate360",
 }
 
 var SLL360ServicesHeuristic = []string{

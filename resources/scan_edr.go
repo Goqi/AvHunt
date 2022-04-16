@@ -30,4 +30,7 @@ var (
 	RisingEDR         EDRType = "rising"
 	JiangminEDR       EDRType = "jiangmin"
 	AntianEDR         EDRType = "antian"
+	BaiduEDR          EDRType = "baidu"
+	D99netEDR         EDRType = "d99net"
+	HwsEDR            EDRType = "hws"
 )

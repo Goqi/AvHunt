@@ -329,6 +329,8 @@ var EdrList = []string{
 	"SafeDogGuardCenter",
 	"wsssr_defence_daemon",
 	"wsssr_defence_service",
+	"yunsuo_agent_service",
+	"yunsuo_agent_daemon",
 	"YSBugReport",
 	"YSUpdate",
 	"QMDL",
@@ -371,6 +373,17 @@ var EdrList = []string{
 	"AtUsbScan",
 	"atmain",
 	"AtUpdate",
+	"BaiduSdSvc",
+	"BaiduSdTray",
+	"BaiduSd",
+	"bddownloader",
+	"baiduansvx",
+	"D_Safe_Manage",
+	"d_manage",
+	"HwsPanel",
+	"hws_ui",
+	"hws",
+	"hwsd",
 }
 
 var ReconList = []string{

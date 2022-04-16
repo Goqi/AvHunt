@@ -53,6 +53,14 @@ AvHunt Detections Currently Available
 - 瑞星杀毒
 - 江民杀毒
 - 安天杀毒
+- 百度杀毒
+- D盾
+- 护卫神
+
+以下待更新
+
+- 深信服EDR
+- 绿盟EDR
 
 ## EDRHunt
 

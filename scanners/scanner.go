@@ -25,5 +25,8 @@ var (
 		&RisingDetection{},
 		&JiangminDetection{},
 		&AntianDetection{},
+		&BaiduDetection{},
+		&D99netDetection{},
+		&HwsDetection{},
 	}
 )
