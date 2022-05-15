@@ -28,5 +28,6 @@ var (
 		&BaiduDetection{},
 		&D99netDetection{},
 		&HwsDetection{},
+		&MozheDetection{},
 	}
 )

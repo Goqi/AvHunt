@@ -384,6 +384,7 @@ var EdrList = []string{
 	"hws_ui",
 	"hws",
 	"hwsd",
+	"ananwidget",
 }
 
 var ReconList = []string{

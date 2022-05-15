@@ -56,6 +56,7 @@ AvHunt Detections Currently Available
 - 百度杀毒
 - D盾
 - 护卫神
+- 墨者安全
 
 以下待更新
 

@@ -33,4 +33,5 @@ var (
 	BaiduEDR          EDRType = "baidu"
 	D99netEDR         EDRType = "d99net"
 	HwsEDR            EDRType = "hws"
+	MozheEDR          EDRType = "mozhe"
 )
