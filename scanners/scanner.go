@@ -29,5 +29,6 @@ var (
 		&D99netDetection{},
 		&HwsDetection{},
 		&MozheDetection{},
+		&YaxinDetection{},
 	}
 )
