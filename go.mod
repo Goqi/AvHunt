@@ -5,7 +5,6 @@ go 1.19
 require (
 	github.com/bi-zone/go-fileversion v1.0.0
 	github.com/hashicorp/go-multierror v1.1.1
-	github.com/spf13/cobra v1.4.0
 	github.com/yusufpapurcu/wmi v1.2.2
 )
 
