@@ -33,6 +33,12 @@ var TrendMicroHeuristic = []string{
 	"ds_agent.exe",
 	"ufnavi.exe",
 	"SfCtlCom.exe",
+	//自己添加
+	"PCCPFW.exe",
+	"PCCTLCOM.exe",
+	"TMLISTEN.exe",
+	"TMNTSRV.exe",
+	"TMPROXY.exe",
 }
 
 func (w *TrendMicroDetection) Detect(data resources.SystemData) (resources.EDRType, bool) {

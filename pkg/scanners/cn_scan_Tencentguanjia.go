@@ -30,6 +30,7 @@ var TencentguanjiaProcessHeuristic = []string{
 	"QMSuperScan",
 	"QMUpload",
 	"QMUsbGuard",
+	"QQPCTray",
 }
 
 var TencentguanjiaServicesHeuristic = []string{
@@ -50,6 +51,7 @@ var TencentguanjiaServicesHeuristic = []string{
 	"QMSuperScan",
 	"QMUpload",
 	"QMUsbGuard",
+	"QQPCTray",
 }
 
 var TencentguanjiaDriverHeuristic = []string{
@@ -70,6 +72,7 @@ var TencentguanjiaDriverHeuristic = []string{
 	"QMSuperScan",
 	"QMUpload",
 	"QMUsbGuard",
+	"QQPCTray",
 }
 
 var TencentguanjiaRegistryHeuristic = []string{
@@ -90,6 +93,7 @@ var TencentguanjiaRegistryHeuristic = []string{
 	"QMSuperScan",
 	"QMUpload",
 	"QMUsbGuard",
+	"QQPCTray",
 }
 
 func (w *TencentguanjiaDetection) Detect(data resources.SystemData) (resources.EDRType, bool) {

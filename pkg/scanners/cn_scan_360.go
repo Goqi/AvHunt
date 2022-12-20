@@ -22,6 +22,8 @@ var SLL360ProcessHeuristic = []string{
 	"QHActiveDefense",
 	"360skylarsvc",
 	"LiveUpdate360",
+	"safeboxTray",
+	"scrscan",
 }
 
 var SLL360ServicesHeuristic = []string{
@@ -34,6 +36,7 @@ var SLL360ServicesHeuristic = []string{
 	"QHActiveDefense",
 	"360skylarsvc",
 	"LiveUpdate360",
+	"safeboxTray",
 }
 
 var SLL360DriverHeuristic = []string{
@@ -46,6 +49,7 @@ var SLL360DriverHeuristic = []string{
 	"QHActiveDefense",
 	"360skylarsvc",
 	"LiveUpdate360",
+	"safeboxTray",
 }
 
 var SLL360RegistryHeuristic = []string{
@@ -58,6 +62,7 @@ var SLL360RegistryHeuristic = []string{
 	"QHActiveDefense",
 	"360skylarsvc",
 	"LiveUpdate360",
+	"safeboxTray",
 }
 
 func (w *SLL360Detection) Detect(data resources.SystemData) (resources.EDRType, bool) {

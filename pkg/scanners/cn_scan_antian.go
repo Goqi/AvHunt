@@ -18,6 +18,8 @@ var AntianProcessHeuristic = []string{
 	"AtUsbScan",
 	"atmain",
 	"AtUpdate",
+	"AGB",
+	"AHPROCMONSERVER",
 }
 
 var AntianServicesHeuristic = []string{
@@ -26,6 +28,8 @@ var AntianServicesHeuristic = []string{
 	"AtUsbScan",
 	"atmain",
 	"AtUpdate",
+	"AGB",
+	"AHPROCMONSERVER",
 }
 
 var AntianDriverHeuristic = []string{
@@ -34,6 +38,8 @@ var AntianDriverHeuristic = []string{
 	"AtUsbScan",
 	"atmain",
 	"AtUpdate",
+	"AGB",
+	"AHPROCMONSERVER",
 }
 
 var AntianRegistryHeuristic = []string{
@@ -42,6 +48,8 @@ var AntianRegistryHeuristic = []string{
 	"AtUsbScan",
 	"atmain",
 	"AtUpdate",
+	"AGB",
+	"AHPROCMONSERVER",
 }
 
 func (w *AntianDetection) Detect(data resources.SystemData) (resources.EDRType, bool) {

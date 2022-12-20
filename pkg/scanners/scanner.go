@@ -32,6 +32,8 @@ var (
 		&HwsDetection{},
 		&MozheDetection{},
 		&YaxinDetection{},
+		&AliYunDunDetection{},
+		&PandaDetection{},
 
 		//v1.4.4
 		&ESETEDRDetection{},

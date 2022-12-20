@@ -14,6 +14,7 @@ func (w *RisingDetection) Type() resources.EDRType {
 
 var RisingProcessHeuristic = []string{
 	"rsmain",
+	"RavMonD",
 	"rstray",
 	"rstray64",
 	"rsupdatertool",
@@ -22,6 +23,7 @@ var RisingProcessHeuristic = []string{
 
 var RisingServicesHeuristic = []string{
 	"rsmain",
+	"RavMonD",
 	"rstray",
 	"rstray64",
 	"rsupdatertool",
@@ -30,6 +32,7 @@ var RisingServicesHeuristic = []string{
 
 var RisingDriverHeuristic = []string{
 	"rsmain",
+	"RavMonD",
 	"rstray",
 	"rstray64",
 	"rsupdatertool",
@@ -38,6 +41,7 @@ var RisingDriverHeuristic = []string{
 
 var RisingRegistryHeuristic = []string{
 	"rsmain",
+	"RavMonD",
 	"rstray",
 	"rstray64",
 	"rsupdatertool",

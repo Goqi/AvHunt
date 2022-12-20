@@ -17,6 +17,11 @@ var JinshanProcessHeuristic = []string{
 	"kupdata",
 	"kxetray",
 	"kwsprotect64",
+	"ksafe",
+	"KSafeTray",
+	"KSafeSvc",
+	"KWatch",
+	"KMAILMON",
 }
 
 var JinshanServicesHeuristic = []string{
@@ -24,6 +29,11 @@ var JinshanServicesHeuristic = []string{
 	"kupdata",
 	"kxetray",
 	"kwsprotect64",
+	"ksafe",
+	"KSafeTray",
+	"KSafeSvc",
+	"KWatch",
+	"KMAILMON",
 }
 
 var JinshanDriverHeuristic = []string{
@@ -31,6 +41,11 @@ var JinshanDriverHeuristic = []string{
 	"kupdata",
 	"kxetray",
 	"kwsprotect64",
+	"ksafe",
+	"KSafeTray",
+	"KSafeSvc",
+	"KWatch",
+	"KMAILMON",
 }
 
 var JinshanRegistryHeuristic = []string{
@@ -38,6 +53,11 @@ var JinshanRegistryHeuristic = []string{
 	"kupdata",
 	"kxetray",
 	"kwsprotect64",
+	"ksafe",
+	"KSafeTray",
+	"KSafeSvc",
+	"KWatch",
+	"KMAILMON",
 }
 
 func (w *JinshanDetection) Detect(data resources.SystemData) (resources.EDRType, bool) {

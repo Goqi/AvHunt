@@ -35,6 +35,8 @@ var (
 	HwsEDR            EDRType = "hws"
 	MozheEDR          EDRType = "mozhe"
 	YaxinEDR          EDRType = "Yaxin"
+	AliYunDunEDR      EDRType = "aliyundun"
+	PandaEDR          EDRType = "Panda"
 
 	//v1.4.4
 	QualysEDR       EDRType = "qualys"

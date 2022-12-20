@@ -40,6 +40,10 @@ var KasperskyHeuristic = []string{
 	"klnagent.exe",
 	"kl_platf.exe",
 	"klnagwds.exe",
+	// 自己添加
+	"_avp32.exe",
+	"_avpcc.exe",
+	"_avpm.exe",
 }
 
 func (w *KaskperskyDetection) Detect(data resources.SystemData) (resources.EDRType, bool) {

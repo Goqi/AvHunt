@@ -20,6 +20,8 @@ var SafedogProcessHeuristic = []string{
 	"Safedog Update Center",
 	"SafeDogCloudHelper",
 	"SafeDogGuardCenter",
+	"safedogupdatecenter",
+	"SafeDogSiteIIS",
 }
 
 var SafedogServicesHeuristic = []string{
@@ -30,6 +32,8 @@ var SafedogServicesHeuristic = []string{
 	"Safedog Update Center",
 	"SafeDogCloudHelper",
 	"SafeDogGuardCenter",
+	"safedogupdatecenter",
+	"SafeDogSiteIIS",
 }
 
 var SafedogDriverHeuristic = []string{
@@ -40,6 +44,8 @@ var SafedogDriverHeuristic = []string{
 	"Safedog Update Center",
 	"SafeDogCloudHelper",
 	"SafeDogGuardCenter",
+	"safedogupdatecenter",
+	"SafeDogSiteIIS",
 }
 
 var SafedogRegistryHeuristic = []string{
@@ -50,6 +56,8 @@ var SafedogRegistryHeuristic = []string{
 	"Safedog Update Center",
 	"SafeDogCloudHelper",
 	"SafeDogGuardCenter",
+	"safedogupdatecenter",
+	"SafeDogSiteIIS",
 }
 
 func (w *SafedogDetection) Detect(data resources.SystemData) (resources.EDRType, bool) {

@@ -58,6 +58,8 @@ AvHunt Detections Currently Available
 - 护卫神
 - 墨者安全
 - 亚信安全
+- 阿里云盾
+- 熊猫卫士
 
 以下待更新
 

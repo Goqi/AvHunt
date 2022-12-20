@@ -19,6 +19,8 @@ var YunsuoProcessHeuristic = []string{
 	"YSUpdate",
 	"yunsuo_agent_service",
 	"yunsuo_agent_daemon",
+	"gov_defence_service",
+	"gov_defence_daemon",
 }
 
 var YunsuoServicesHeuristic = []string{
@@ -28,6 +30,8 @@ var YunsuoServicesHeuristic = []string{
 	"YSUpdate",
 	"yunsuo_agent_service",
 	"yunsuo_agent_daemon",
+	"gov_defence_service",
+	"gov_defence_daemon",
 }
 
 var YunsuoDriverHeuristic = []string{
@@ -37,6 +41,8 @@ var YunsuoDriverHeuristic = []string{
 	"YSUpdate",
 	"yunsuo_agent_service",
 	"yunsuo_agent_daemon",
+	"gov_defence_service",
+	"gov_defence_daemon",
 }
 
 var YunsuoRegistryHeuristic = []string{
@@ -46,6 +52,8 @@ var YunsuoRegistryHeuristic = []string{
 	"YSUpdate",
 	"yunsuo_agent_service",
 	"yunsuo_agent_daemon",
+	"gov_defence_service",
+	"gov_defence_daemon",
 }
 
 func (w *YunsuoDetection) Detect(data resources.SystemData) (resources.EDRType, bool) {
