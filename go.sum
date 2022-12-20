@@ -1,3 +1,7 @@
+github.com/Gogods/cobra v1.6.1 h1:DwJRhqGs08SskiHXdKTH+M0AO7GoJEGXLfcxAej8C04=
+github.com/Gogods/cobra v1.6.1/go.mod h1:jo7DGsCB1TEMXdLpT5HvZ/U7HmtpEJnvlPquhfC6bpQ=
+github.com/Gogods/pflag v0.0.0-20221115102352-9c9ef4b61b14 h1:LKF++9IQ52FMA4FrG7MPmjrWs3KJu3CZr2wZaHmEwzg=
+github.com/Gogods/pflag v0.0.0-20221115102352-9c9ef4b61b14/go.mod h1:Du7Wff2ULmvrrVtqXpYyGhCRigUKsyE1Ow78ZFG4oWs=
 github.com/bi-zone/go-fileversion v1.0.0 h1:N/sorBKYfWDjT5ySlUOxSJvG3g9XiaBKxXgHGfH5Wf8=
 github.com/bi-zone/go-fileversion v1.0.0/go.mod h1:evMpx4TA/iTAtufWYK271/Mbr5JAL24vlu1WNjVef6s=
 github.com/cpuguy83/go-md2man/v2 v2.0.1/go.mod h1:tgQtvFlXSQOSOSIRvRPT7W67SCa46tRHOmNcaadrF8o=
@@ -9,6 +13,8 @@ github.com/hashicorp/go-multierror v1.1.1 h1:H5DkEtf6CXdFp0N0Em5UCwQpXMWke8IA0+l
 github.com/hashicorp/go-multierror v1.1.1/go.mod h1:iw975J/qwKPdAO1clOe2L8331t/9/fmwbPZ6JB6eMoM=
 github.com/inconshreveable/mousetrap v1.0.0 h1:Z8tu5sraLXCXIcARxBp/8cbvlwVa7Z1NHg9XEKhtSvM=
 github.com/inconshreveable/mousetrap v1.0.0/go.mod h1:PxqpIevigyE2G7u3NXJIT2ANytuPF1OarO4DADm73n8=
+github.com/inconshreveable/mousetrap v1.0.1 h1:U3uMjPSQEBMNp1lFxmllqCPM6P5u/Xq7Pgzkat/bFNc=
+github.com/inconshreveable/mousetrap v1.0.1/go.mod h1:vpF70FUmC8bwa3OWnCshd2FqLfsEA9PFc4w1p2J65bw=
 github.com/russross/blackfriday/v2 v2.1.0/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
 github.com/spf13/cobra v1.4.0 h1:y+wJpx64xcgO1V+RcnwW0LEHxTKRi2ZDPSBjWnrg88Q=
 github.com/spf13/cobra v1.4.0/go.mod h1:Wo4iy3BUC+X2Fybo0PDqwJIv3dNRiZLHQymsfxlB84g=

@@ -78,6 +78,18 @@ EDRHunt Detections Currently Available
 - SentinelOne
 - FireEye
 - Elastic EDR
+- Qualys EDR
+- Trend Micro EDR
+- ESET EDR
+- Cybereason EDR
+- BitDefender EDR
+- Checkpoint EDR
+- Cynet EDR
+- DeepInstinct EDR
+- Sophos EDR
+- Fortinet EDR
+- MalwareBytes EDR
+- LimaCharlie Agent
 
 ## Todo
 
