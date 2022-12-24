@@ -5,7 +5,7 @@ import "AvHunt/pkg/resources"
 type TianQingDetection struct{}
 
 func (w *TianQingDetection) Name() string {
-	return "TianQing Defender"
+	return "奇安信天擎 Defender"
 }
 
 func (w *TianQingDetection) Type() resources.EDRType {

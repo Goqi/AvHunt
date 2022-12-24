@@ -1,14 +1,14 @@
 package cmd
 
 import (
-	"AvHunt/pkg/cobra"
+	"AvHunt/pkg/avRecon"
+	"AvHunt/pkg/resources"
+	"AvHunt/pkg/scanners"
 	"context"
 	"fmt"
 	"os"
 
-	"AvHunt/pkg/avRecon"
-	"AvHunt/pkg/resources"
-	"AvHunt/pkg/scanners"
+	"github.com/Gogods/cobra"
 )
 
 var (
@@ -22,10 +22,22 @@ var (
 )
 
 func AvHunt() {
-	fmt.Println("Goqi Team (https://github.com/Goqi/AvHunt) | Version:", versionStr, "\n暂时支持39个杀软的识别！")
+	fmt.Println("作者：0e0w | 版本：", versionStr, "\n网址：https://github.com/Goqi/AvHunt\n说明：一款简单好用的杀毒软件识别程序，暂时支持39个杀软的识别！\n")
 	if err := rootCmd.Execute(); err != nil {
 		fmt.Println(err)
 		os.Exit(1)
+	}
+}
+
+func scanEDRCommand(cmd *cobra.Command, args []string) {
+	//fmt.Println("[AV]")
+	systemData, _ := avRecon.GetSystemData(context.Background())
+
+	for _, scanner := range scanners.Scanners {
+		_, ok := scanner.Detect(systemData)
+		if ok {
+			fmt.Printf("发现杀软: %s\n", scanner.Name())
+		}
 	}
 }
 
@@ -68,56 +80,6 @@ func edrCommand(cmd *cobra.Command, args []string) {
 		printRegistry(summary)
 		fmt.Println()
 	}
-}
-
-func versionCommand(cmd *cobra.Command, args []string) {
-	fmt.Printf("version: %s\n", versionStr)
-}
-
-func scanEDRCommand(cmd *cobra.Command, args []string) {
-	fmt.Println("[AV]")
-	systemData, _ := avRecon.GetSystemData(context.Background())
-
-	for _, scanner := range scanners.Scanners {
-		_, ok := scanner.Detect(systemData)
-		if ok {
-			fmt.Printf("Detected AV: %s\n", scanner.Name())
-		}
-	}
-}
-
-func allCommand(cmd *cobra.Command, args []string) {
-	all = true
-	edrCommand(cmd, args)
-	scanEDRCommand(cmd, args)
-}
-
-var rootCmd = &cobra.Command{
-	Use:   "AvHunt",
-	Short: "scans EDR/AV",
-	Long:  `EDRHunt scans and finds the installed EDR/AV by scanning services, processes, registry, and drivers.`,
-	Run:   edrCommand,
-}
-
-var versionCmd = &cobra.Command{
-	Use:   "version",
-	Short: "version",
-	Long:  `avRecon version`,
-	Run:   versionCommand,
-}
-
-var scanCmd = &cobra.Command{
-	Use:   "scan",
-	Short: "scan installed edrs",
-	Long:  `scan edrs`,
-	Run:   scanEDRCommand,
-}
-
-var allCmd = &cobra.Command{
-	Use:   "all",
-	Short: "scan installed edrs",
-	Long:  `scan edrs and show system data`,
-	Run:   allCommand,
 }
 
 func printProcess(summary []resources.ProcessMetaData) {
@@ -165,16 +127,4 @@ func printDrivers(summary []resources.DriverMetaData) {
 		fmt.Printf("Matched Keyword: %s\n", driver.ScanMatch)
 		fmt.Println()
 	}
-}
-
-func init() {
-	rootCmd.PersistentFlags().BoolVarP(&drivers, "drivers", "d", drivers, "Scan installed drivers")
-	rootCmd.PersistentFlags().BoolVarP(&processes, "processes", "p", processes, "Scan installed processes")
-	rootCmd.PersistentFlags().BoolVarP(&services, "services", "s", services, "Scan installed services")
-	rootCmd.PersistentFlags().BoolVarP(&registry, "registry", "r", registry, "Scan installed registry")
-	rootCmd.PersistentFlags().BoolVarP(&versionCheck, "version", "v", versionCheck, "Output version information and exit")
-
-	rootCmd.AddCommand(versionCmd)
-	rootCmd.AddCommand(scanCmd)
-	rootCmd.AddCommand(allCmd)
 }

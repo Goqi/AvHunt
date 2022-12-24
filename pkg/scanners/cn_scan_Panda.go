@@ -12,7 +12,7 @@ import "AvHunt/pkg/resources"
 type PandaDetection struct{}
 
 func (w *PandaDetection) Name() string {
-	return "奇虎360 Defender"
+	return "熊猫卫士 Defender"
 }
 
 func (w *PandaDetection) Type() resources.EDRType {
